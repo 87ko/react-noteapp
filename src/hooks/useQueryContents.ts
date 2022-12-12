@@ -8,7 +8,7 @@ export const useQueryContents = () => {
 		return data
 	}
 	return useQuery<Content[], Error>({
-		queryKey: 'contents',
+		queryKey: ['contents'],
 		queryFn: getContents,
 		staleTime: Infinity,
 	})
